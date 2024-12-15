@@ -53,3 +53,13 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+// Add at the top with other requires
+require("dotenv").config();
+
+// Update your port configuration
+const PORT = process.env.PORT || 3000;
+
+// At the bottom of the file
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
