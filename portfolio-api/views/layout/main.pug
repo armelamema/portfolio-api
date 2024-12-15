@@ -1,0 +1,16 @@
+﻿doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Portfolio Admin
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        nav.navbar
+            .container
+                a.navbar-brand(href="/admin") Portfolio Admin
+                if user
+                    a.nav-link(href="/auth/logout") Logout
+        main.container
+            block content
+        script(src="/js/admin.js")

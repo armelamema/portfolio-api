@@ -1,0 +1,15 @@
+﻿extends ../layout/main
+
+block content
+    h1 Dashboard
+    .dashboard-stats
+        .stat-card
+            h3 Projects
+            p= projects.length
+        .stat-card
+            h3 Skills
+            p= skills.length
+    
+    .dashboard-actions
+        a.btn.btn-primary(href="/admin/projects") Manage Projects
+        a.btn.btn-primary(href="/admin/skills") Manage Skills

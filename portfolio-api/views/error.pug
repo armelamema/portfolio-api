@@ -1,0 +1,8 @@
+﻿extends layout/main
+
+block content
+    .error-container
+        h1 Error
+        p= message
+        if error
+            pre= JSON.stringify(error, null, 2)
